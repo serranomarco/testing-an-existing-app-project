@@ -7,6 +7,7 @@ describe("saveCategories()", () => {
     const newCategory = 'New Category';
 
     // Act
+    const result = saveCategories(categories, newCategory);
     // Call the saveCategories function with the categories
     // and newCategory values and store the result in a
     // variable named "result"
@@ -28,12 +29,14 @@ describe("saveCategories()", () => {
     // of two arrays instead of the "equal" method.
     // If the array in result is sorted, what should you
     // compare to?
-    expect.fail('please write this test');
+    expect(result).to.eql(categories);
   });
 
   it('makes sure the result and the original are different', () => {
     // Arrange
     // Declare any categories and newCategory values here.
+    const categories = ['work', 'fun'];
+    const newCategory = 'party';
 
     // Act
     const result = saveCategories(categories, newCategory);

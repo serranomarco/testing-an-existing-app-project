@@ -1,16 +1,21 @@
 {
-  "name": "fullstack-to-do-list-project-solution",
+  "name": "testing-an-existing-app-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "get-body-from-request.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.1.1"
+    "handlebars": "^4.7.5",
+    "handlebars-helpers": "^0.10.0"
   }
 }
